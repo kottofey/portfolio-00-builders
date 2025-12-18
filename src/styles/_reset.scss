@@ -1,0 +1,63 @@
+/* Oswald */
+@font-face {
+  font-family: 'Oswald';
+  font-weight: 100 900;
+  font-style: normal;
+  src: url('/fonts/Oswald-VariableFont_wght.ttf') format('truetype');
+}
+
+/* Font Awesome v7*/
+@font-face {
+  font-family: 'Font Awesome';
+  font-style: normal;
+  src: url('/fonts/fa-regular-400.woff2') format('woff2');
+}
+
+
+/* Font Awesome v4*/
+@font-face {
+  font-family: 'Font Awesome v4';
+  font-style: normal;
+  src: url('/fonts/fontawesome-webfont.woff2') format('woff2');
+}
+
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  font-family: 'Oswald', 'Times', 'Roboto', 'Verdana', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+li,
+body,
+p,
+button {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: none;
+}
+
+a,
+a:visited {
+  text-decoration: unset;
+  color: unset;
+  background-color: unset;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  all: unset;
+}
