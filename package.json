@@ -8,8 +8,8 @@
   "scripts": {
     "dev": "vite",
     "vite:build": "vite build",
-    "lint:html": "npx eslint . --fix",
-    "deploy": "vue-tsc -b && vite build && scp -r ./dist/* kottofey@myvps:/var/www/html/masha-magic-beads.ru"
+    "lint:html": "npx eslint index.html --fix",
+    "deploy": "vite build && rsync -avz --delete -e 'ssh -i /home/kottofey/.ssh/sphere' ./dist/ kottofey@myvps:/var/www/html/builders.romeokontakt.ru/"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.2",
@@ -21,11 +21,14 @@
     "eslint-import-resolver-typescript": "^4.4.4",
     "eslint-plugin-import": "^2.32.0",
     "jiti": "^2.6.1",
+    "postcss-html": "^1.8.0",
     "prettier": "^3.7.4",
     "sass-embedded": "^1.97.0",
     "stylelint": "^16.26.1",
+    "stylelint-config-property-sort-order-smacss": "^10.0.0",
     "stylelint-config-recommended": "^17.0.0",
     "stylelint-config-recommended-scss": "^16.0.2",
+    "stylelint-order": "^7.0.0",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.50.0",
     "vite": "^7.3.0"

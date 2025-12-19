@@ -1,8 +1,8 @@
 /* Oswald */
 @font-face {
   font-family: 'Oswald';
-  font-weight: 100 900;
   font-style: normal;
+  font-weight: 100 900;
   src: url('/fonts/Oswald-VariableFont_wght.ttf') format('truetype');
 }
 
@@ -21,7 +21,6 @@
   src: url('/fonts/fontawesome-webfont.woff2') format('woff2');
 }
 
-
 html {
   box-sizing: border-box;
 }
@@ -30,6 +29,7 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+
   font-family: 'Oswald', 'Times', 'Roboto', 'Verdana', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -42,15 +42,18 @@ p,
 button {
   margin: 0;
   padding: 0;
-  list-style: none;
+
   border: none;
+
+  list-style: none;
 }
 
 a,
 a:visited {
-  text-decoration: unset;
-  color: unset;
   background-color: unset;
+
+  color: unset;
+  text-decoration: unset;
 }
 
 h1,

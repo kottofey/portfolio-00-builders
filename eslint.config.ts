@@ -52,7 +52,7 @@ export default defineConfig(
       "html/require-explicit-size": "off",
       "html/attrs-newline": ["error", { closeStyle: "newline" }],
       "html/id-naming-convention": ["error", "camelCase"],
-      "html/indent": ["error", 2],
+      "html/indent": ["error", 4],
     },
   },
 );
