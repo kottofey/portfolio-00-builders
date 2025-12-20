@@ -1,0 +1,58 @@
+@use '../globals' as *;
+
+.contacts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  column-gap: 30px;
+
+  text-transform: uppercase;
+
+  &__title {
+    color: $color-gray;
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 75%;
+
+    text-align: center;
+
+    &--mail {
+      color: $color-accent;
+    }
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 255px;
+
+    height: 190px;
+    padding-top: 10px;
+    row-gap: 10px;
+
+    &--address::before {
+      @include font-awesome-icon("", $color-accent, 48px);
+    }
+
+    &--phone::before {
+      @include font-awesome-icon("", $color-accent, 48px);
+    }
+
+    &--schedule::before {
+      @include font-awesome-icon("", $color-accent, 48px);
+    }
+
+    &--mail::before {
+      @include font-awesome-icon("", $color-accent, 48px);
+    }
+  }
+}

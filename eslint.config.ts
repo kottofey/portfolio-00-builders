@@ -51,7 +51,7 @@ export default defineConfig(
       "html/no-ineffective-attrs": "error",
       "html/require-explicit-size": "off",
       "html/attrs-newline": ["error", { closeStyle: "newline" }],
-      "html/id-naming-convention": ["error", "camelCase"],
+      "html/id-naming-convention": ["error", "kebab-case"],
       "html/indent": ["error", 4],
     },
   },

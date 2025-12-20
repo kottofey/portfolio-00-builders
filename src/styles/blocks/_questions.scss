@@ -1,0 +1,31 @@
+@use '../globals' as *;
+
+.questions {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  max-width: $wrapper-width;
+  padding: 10px;
+  row-gap: 25px;
+
+  &__question {
+
+    &:before {
+      content: "";
+
+      position: absolute;
+    }
+
+    &--title {
+      color: $color-accent;
+      font-size: 24px;
+      text-transform: uppercase;
+    }
+
+    &--text {
+      color: $color-gray;
+      font-size: 16px;
+    }
+  }
+}

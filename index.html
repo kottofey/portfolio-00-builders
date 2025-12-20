@@ -8,6 +8,7 @@
             type="image/png"
             href="/favicon.png"
         >
+        <link rel="stylesheet" href="/src/styles/index.scss">
 
         <title>Сайт строительной компании</title>
     </head>
@@ -21,9 +22,8 @@
                     <a class="header-wrapper__logo" href="https://romeokontakt.ru"></a>
                     <button
                         type="button"
-                        id="menu"
+                        id="menu-button"
                         class="header-wrapper__menu-burger"
-
                     ></button>
 
                     <h1 class="header-wrapper__title">РЕАЛИЗУЕМ КРУПНЕЙШИЕ ПРОЕКТЫ В РОССИИ</h1>
@@ -32,8 +32,9 @@
             </header>
 
             <main>
+                <!--  Numbers  -->
                 <section class="section">
-                    <div class="section__block numbers">
+                    <div class="numbers">
                         <div class="numbers__item">
                             <p class="numbers__item--top">26</p>
                             <p class="numbers__item--middle">лет</p>
@@ -55,11 +56,43 @@
                             <p class="numbers__item--bottom">на рынке</p>
                         </div>
                     </div>
+
                 </section>
 
+                <!--  Projects  -->
                 <section class="section">
                     <h2 class="section__title">НАШИ САМЫЕ БОЛЬШИЕ ПРОЕКТЫ</h2>
-                    <div class="section__block projects">
+                    <div class="projects">
+                        <div class="projects__project project-card">
+                            <img
+                                src="/src/assets/gazprom.png"
+                                alt="Gazprom Arena"
+                                class="project-card__image"
+                            >
+                            <p class="project-card__title">Газпром Арена</p>
+                            <p class="project-card__text">Мы сделали самую красивую арену в Европе. Это открытие стало для нас прорывной точкой для разивтия на следующие десятилетия. Мы очень рады данному еву.</p>
+                        </div>
+
+                        <div class="projects__project project-card">
+                            <img
+                                src="/src/assets/gazprom.png"
+                                alt="Gazprom Arena"
+                                class="project-card__image"
+                            >
+                            <p class="project-card__title">Газпром Арена</p>
+                            <p class="project-card__text">Мы сделали самую красивую арену в Европе. Это открытие стало для нас прорывной точкой для разивтия на следующие десятилетия. Мы очень рады данному еву.</p>
+                        </div>
+
+                        <div class="projects__project project-card">
+                            <img
+                                src="/src/assets/gazprom.png"
+                                alt="Gazprom Arena"
+                                class="project-card__image"
+                            >
+                            <p class="project-card__title">Газпром Арена</p>
+                            <p class="project-card__text">Мы сделали самую красивую арену в Европе. Это открытие стало для нас прорывной точкой для разивтия на следующие десятилетия. Мы очень рады данному еву.</p>
+                        </div>
+
                         <div class="projects__project project-card">
                             <img
                                 src="/src/assets/gazprom.png"
@@ -93,7 +126,7 @@
                     </div>
                 </section>
 
-                <!--  request  -->
+                <!--  Request  -->
                 <section
                     class="full-width-section full-width-section--tomato-back">
                     <div class="full-width-section__wrapper request">
@@ -108,9 +141,10 @@
                     </div>
                 </section>
 
+                <!--  Services  -->
                 <section class="section">
                     <h2 class="section__title">ЧЕМ МЫ ЗАНИМАЕМСЯ?</h2>
-                    <div class="section__block services">
+                    <div class=" services">
                         <div class="services__item">
                             <span class="services__item--text">Строительство офисных
                                 зданий</span>
@@ -175,7 +209,7 @@
                         src="/src/assets/portfolio1.png"
                         alt="porfolio picture"
                     >
-          
+
                     <img
                         class="portfolio__item"
                         src="/src/assets/portfolio1.png"
@@ -199,7 +233,7 @@
                 <!--  questions  -->
                 <section class="section">
                     <h2 class="section__title">ОТВЕТЫ НА ВОПРОСЫ</h2>
-                    <div class="section__block questions">
+                    <div class=" questions">
                         <details class="questions__question">
                             <summary
                                 class="questions__question--title">Работаете ли вы по 249
@@ -287,7 +321,7 @@
                 <section class="section">
                     <h2 class="section__title">отзывы о работе с нами</h2>
 
-                    <div class="section__block reviews">
+                    <div class=" reviews">
                         <div class="reviews__review">
                             <div class="reviews__card">
                                 <p class="reviews__card--betony">“</p>
@@ -437,6 +471,63 @@
                 </div>
             </footer>
         </div>
+
+        <!--  Modal menu  -->
+
+        <div class="modal-menu" id="modal-menu">
+            <h2 class="modal-menu__title">Меню</h2>
+            <button
+                type="button"
+                id="modal-menu-close-button"
+                class="modal-menu__close-button"
+            >
+                X
+            </button>
+            <ul class="modal-menu__wrapper">
+                <li class="modal-menu__item"><a href="#">Пункт меню</a></li>
+                <li class="modal-menu__item"><a href="#">Пункт меню</a></li>
+                <li class="modal-menu__item"><a href="#">Пункт меню</a></li>
+                <li class="modal-menu__item"><a href="#">Пункт меню</a></li>
+                <li class="modal-menu__item"><a href="#">Пункт меню</a></li>
+                <li class="modal-menu__item"><a href="#">Пункт меню</a></li>
+            </ul>
+        </div>
+
+        <div class="modal-menu__mask notransition"
+            id="modal-menu-mask"></div>
+
+        <!--  Modal Request  -->
+
+        <div class="modal-request notransition" id="modal-request">
+            <h2 class="modal-request__title">Модалка для запроса</h2>
+
+            <form action="#">
+                <label>
+                    Ваш телефон:
+                    <input type="text">
+                </label>
+            </form>
+
+            <div class="modal-request__button-group">
+                <button
+                    type="button"
+                    id="modal-request-close-button"
+                    class="modal-request__button"
+                >
+                    Закрыть
+                </button>
+
+                <button
+                    type="button"
+                    id="modal-request-send-button"
+                    class="modal-request__button"
+                >
+                    отправить
+                </button>
+            </div>
+
+        </div>
+
         <!-- Scripts -->
         <script type="module" src="/src/scripts/index.ts"></script>
     </body>

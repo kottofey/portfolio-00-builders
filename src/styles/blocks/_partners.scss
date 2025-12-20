@@ -1,0 +1,33 @@
+@use '../globals' as *;
+
+.partners {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: $color-partners-background;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    column-gap: 50px;
+    row-gap: 30px;
+  }
+
+  &__title {
+    display: flex;
+
+    align-self: center;
+    margin-bottom: 60px;
+
+    color: $color-white;
+    font-size: 36px;
+    text-transform: uppercase;
+    justify-self: center;
+  }
+}
